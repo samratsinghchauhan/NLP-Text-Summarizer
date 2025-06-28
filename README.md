@@ -3,6 +3,7 @@
 A simple Python GUI tool that summarizes long articles into 2–3 key sentences using NLP techniques.
 
 🔹 Features:-
+
 Extractive summarization using NLTK
 
 Clean Tkinter-based GUI
