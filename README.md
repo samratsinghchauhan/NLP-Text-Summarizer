@@ -17,7 +17,7 @@ pip install nltk
 
 💬 Example Use:-
 
-Paste a paragraph into the app and click "Summarize" — it’ll extract the most important lines and show only the output.
+Paste a paragraph into the app and click "Summarize" — it’ll extract the most important lines and show the output.
 
 
 
