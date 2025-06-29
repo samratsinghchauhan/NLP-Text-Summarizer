@@ -42,7 +42,7 @@ heading.pack(pady=(20, 10))
 input_label = tk.Label(app, text="Enter text to summarize:", font=FONT_LABEL, bg="#f8f9fa", anchor="w")
 input_label.pack(padx=30, anchor="w")
 
-text_input = scrolledtext.ScrolledText(app, wrap=tk.WORD, width=100, height=15, font=FONT_TEXT, bg="#ffffff", bd=1, relief=tk.SOLID)
+text_input = scrolledtext.ScrolledText(app, wrap=tk.WORD, width=100, height=12, font=FONT_TEXT, bg="#ffffff", bd=1, relief=tk.SOLID)
 text_input.pack(padx=30, pady=(5, 20))
 
 # --- Button with hover effect ---
@@ -60,9 +60,13 @@ summarize_btn.pack(pady=10)
 output_label = tk.Label(app, text="Summary:", font=FONT_LABEL, bg="#f8f9fa", anchor="w")
 output_label.pack(padx=30, pady=(20, 0), anchor="w")
 
-text_output = scrolledtext.ScrolledText(app, wrap=tk.WORD, width=100, height=10, font=FONT_TEXT, bg="#f1f3f4", bd=1, relief=tk.SOLID)
+text_output = scrolledtext.ScrolledText(app, wrap=tk.WORD, width=100, height=9, font=FONT_TEXT, bg="#f1f3f4", bd=1, relief=tk.SOLID)
 text_output.config(state=tk.DISABLED)
-text_output.pack(padx=30, pady=(5, 30))
+text_output.pack(padx=30, pady=(5, 10))
+
+# --- Footer ---
+footer = tk.Label(app, text="Designed by Samrat Singh", font=("Segoe UI", 10, "italic"), bg="#f8f9fa", fg="#777")
+footer.pack(side=tk.BOTTOM, fill=tk.X, pady=(0, 10))
 
 # --- Run App ---
 app.mainloop()
